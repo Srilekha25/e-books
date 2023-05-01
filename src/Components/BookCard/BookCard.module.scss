@@ -1,0 +1,20 @@
+.BookCard_wrapper{
+    
+    .BookCard__item{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        img{
+            border: 1px solid black;
+            height: 30vh;
+            width: 15vw;
+        }
+        a{
+            text-decoration: none;
+            padding: 12px;
+            background-color: rgb(31, 31, 128);
+            color: white;
+        }
+    }
+}

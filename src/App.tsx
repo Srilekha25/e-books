@@ -1,14 +1,23 @@
-import { useState } from 'react'
-import './App.css'
+import { useState } from "react";
+import "./App.module.scss";
+import {QueryClient, QueryClientProvider, useQuery} from "@tanstack/react-query"
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import BookCard from "./Components/BookCard/BookCard";
+import Table from "./Components/Table/Table";
 
+const queryClient = new QueryClient();
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <div className="App">
-      
-    </div>
+  <QueryClientProvider client={queryClient}>
+    <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Table/>} />
+      <Route path="/Book/:id" element={<BookCard/>}/>
+    </Routes>
+    </BrowserRouter>
+  </QueryClientProvider>
   )
 }
 
-export default App
+export default App;

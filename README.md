@@ -35,5 +35,26 @@
     - npm create vite@latest
 
 - Design Goals:
+  - Fetch the books using the URL and print it in console
+  - Using react query store all the books in client provider
+  - Display and style the books in UI.
+  - Design a modal to view more about the books.
+  - Design a search button and store the results in client provider.
+  - Deploy the site.
+  - Update the Readme.
+- Additional features
+    - Sorting books by title[a-z], author[a-z], publish Date.
+        A dropdown with 4 options 
+        1. none
+        2. title[A_Z]
+        3. Author[A_Z]
+        4. Published Date.
+    - Favorite books - A navbar maybe for books that are favorites. (Dont know how to implement with redux yet)
+    - Add Search History 
+    - books rating system (could be done with redux)
+    - adding personal reviews to your books (could be done with redux)
+    - using google books API collections features
+    - Getting good reads links and displaying them on the page
+    - Book form for submission for books you can't find in the API (react-hook-form)
 
 - Features:

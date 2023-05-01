@@ -1,0 +1,25 @@
+.container__searchBar {
+    text-align: center;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    color: black;
+  }
+  
+  .container__searchBar__inputfield {
+    width: 10%;
+    padding: 1vh 15vw;
+    margin: 8px 0;
+    border: 1px solid black;
+    border-radius: 6px;
+    color: black;
+  }
+  
+  .button__searchBar__submit {
+    padding: 1vh 1vw;
+    text-decoration: none;
+    border: none;
+    border-radius: 6px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+  }

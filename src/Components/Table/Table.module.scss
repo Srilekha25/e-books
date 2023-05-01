@@ -1,0 +1,23 @@
+.Table__wrapper {
+  width: 100%;
+  .Table__books {
+    border: 1px solid black;
+  }
+
+  thead th {
+    padding: 8px;
+    background-color: rgb(92, 151, 202);
+  }
+  tbody {
+    a {
+      text-decoration: none;
+      color: black;
+    }
+    a:hover {
+      td {
+        cursor: pointer;
+        text-decoration: underline;
+      }
+    }
+  }
+}
