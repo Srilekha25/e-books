@@ -1,5 +1,5 @@
 import React from "react";
-import { useQuery, useQueryClient } from "@tanstack/react-query";
+import { useQuery } from "@tanstack/react-query";
 import { getAllBooks } from "../../services/post-services";
 import styles from "../GetBooks/GetBooks.module.scss";
 import { NavLink } from "react-router-dom";
@@ -11,7 +11,6 @@ const GetBooks = () => {
     isError,
     isLoading,
   } = useQuery<Book[] | null>(["books"], getAllBooks);
-  console.log("books in GetBooks", books);
 
   if (isLoading) {
     return <div>Loading...</div>;
@@ -21,12 +20,12 @@ const GetBooks = () => {
   }
 
   return (
-    <div>
+    <>
       {books &&
-        books?.map((book: Book, index: number) => (
-          <tr key={index}>
+        books?.map((book: Book) => (
+          <tr key={book.id} className={styles.GetBooks__body}>
             <NavLink to={`/Book/${book.id}`}>
-            <td>{book.volumeInfo.title}</td>
+              <td>{book.volumeInfo.title ? book.volumeInfo.title : "UnKnown Title"}</td>
             </NavLink>
             <td>
               {book.volumeInfo.authors
@@ -40,7 +39,7 @@ const GetBooks = () => {
             </td>
           </tr>
         ))}
-    </div>
+    </>
   );
 };
 
