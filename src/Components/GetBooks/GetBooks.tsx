@@ -18,7 +18,7 @@ const GetBooks = () => {
     return <div>Loading...</div>;
   }
   if (isError) {
-    return <div>Error while fetching Data</div>;
+    return <h3>Couldn't find any books</h3>;
   }
 
   return (
