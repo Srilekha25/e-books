@@ -20,16 +20,19 @@ React Query: For fetching data easily and managing that data easily between comp
 # Build Steps
 Run the Frontend React application, by executing the following commands from the root folder of this project:
 
+
 cd e-books
 npm install
 npm run dev
 
+
+
 # Design Goals
-For the design, I kept it simple with minimal styles yet clearly displays all the data. 
+For the design, I kept it simple with minimal styles yet clearly displayed all the data. 
 
 # Approach
-Fetch the books using the URL and print it in console.
-Using react query, store all the books in client provider.
+Fetch the books using the URL and print it in the console.
+Using react query, store all the books in the client provider.
 Display and style the books in UI.
 Design a modal to view more about the books.
 Implement the sort functionality with author, title and published Date.
@@ -61,3 +64,4 @@ All the features/functionalities are not tested.
 # Future Goals
 To implement the project in react-redux.
 To write more test cases.
+
