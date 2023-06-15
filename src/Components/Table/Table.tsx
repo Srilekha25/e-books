@@ -12,7 +12,8 @@ const Table = () => {
           <tr>
             <th>Title</th>
             <th>Authors</th>
-            <th>publisher</th>
+            <th>Publisher</th>
+            <th>Published Date</th>
           </tr>
         </thead>
         <tbody>

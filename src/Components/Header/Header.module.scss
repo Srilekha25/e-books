@@ -1,3 +1,21 @@
-.title{
-    text-align: center;
+.title {
+  text-align: center;
+}
+.label__sort {
+  margin: 10px;
+}
+
+.dropdown__sort {
+  padding: 8px;
+  margin: 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  color: #333;
+
+  option:hover {
+    background-color: rgb(142, 199, 248);
+    color: #fff;
+  }
 }

@@ -1,11 +1,13 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useQuery } from "@tanstack/react-query";
 import { getAllBooks } from "../../services/post-services";
 import styles from "../GetBooks/GetBooks.module.scss";
 import { NavLink } from "react-router-dom";
 import { Book } from "../../Interfaces/BookInterface";
 
+
 const GetBooks = () => {
+
   const {
     data: books,
     isError,
@@ -24,7 +26,7 @@ const GetBooks = () => {
       {books &&
         books?.map((book: Book) => (
           <tr key={book.id} className={styles.GetBooks__body}>
-            <NavLink to={`/Book/${book.id}`}>
+            <NavLink to={`/BookCard/${book.id}`}>
               <td>{book.volumeInfo.title ? book.volumeInfo.title : "UnKnown Title"}</td>
             </NavLink>
             <td>
@@ -36,6 +38,11 @@ const GetBooks = () => {
               {book.volumeInfo.publisher
                 ? book.volumeInfo.publisher
                 : "No Publisher"}
+            </td>
+            <td>
+              {book.volumeInfo.publishedDate
+                ? book.volumeInfo.publishedDate
+                : "No Date"}
             </td>
           </tr>
         ))}

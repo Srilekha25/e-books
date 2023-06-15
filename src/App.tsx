@@ -13,7 +13,7 @@ function App() {
     <BrowserRouter>
     <Routes>
       <Route path="/" element={<Table/>} />
-      <Route path="/Book/:id" element={<BookCard/>}/>
+      <Route path="/BookCard/:id" element={<BookCard/>}/>
     </Routes>
     </BrowserRouter>
   </QueryClientProvider>
