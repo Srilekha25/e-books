@@ -17,9 +17,4 @@ describe("Render Back button", () => {
     renderBackButton();
     expect(screen.getByText("Back")).toBeInTheDocument();
   });
-  // test("On Clicking the button should navigate and display all books", () => {
-  //   renderBackButton();
-  //   fireEvent.click(screen.getByText("Back"));
-  //   expect(screen.getByText("Books on Flowers")).toBeInTheDocument();
-  // })
 });

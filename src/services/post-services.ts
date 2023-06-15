@@ -10,7 +10,6 @@ export const getAllBooks = async () => {
   );
   if (response) {
     const dataFromAPI = await response.json();
-    console.log("In post services",dataFromAPI.items);
     return dataFromAPI.items;
   }else{
     return;

@@ -2,9 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import styles from "../BackButton/BackButton.module.scss";
 
-type Props = {};
-
-const BackButton = (props: Props) => {
+const BackButton = () => {
   const navigate = useNavigate();
 
   return (
